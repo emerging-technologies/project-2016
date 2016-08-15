@@ -1,4 +1,4 @@
-PROJECT=slides 
+PROJECT=project 
 TEX=pdflatex --shell-escape 
 
 all:
