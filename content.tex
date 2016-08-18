@@ -1,44 +1,49 @@
 %!TEX root = project.tex
-
-\section*{Project \\ {\small Emerging Tehnologies 2016}}
-
 \noindent
-The following document contains the instructions for the project for this module.
-This overall project will be worth 100\% of your mark for this module -- however it is split into three parts.
+The following document contains the instructions for \projectname{} for \modulename{}.
+The project will be worth 100\% of your mark for this module.
+However, it is split into three parts: a programming component worth 40\%, an architecture component, also worth 40\%, and finally a presentation component worth 20\%.
+The project will involve teamwork and will be managed through the use of GitHub.
 
+You are required to develop a single-page web application (SPA)~\cite{gowebapp} written in the programming language Go~\cite{golang}.
+You must devise an idea for a web application, decide on an architecture, create a development plan, write the software, write documentation explaining how the application works, write a short user guide for it.
+You will also have to give a presentation of your project at the end of term.
 
-\subsection*{Brief}
-You are required to develop a single-page web application~\cite{gowebapp} (SPA) written in the programming language Go~\cite{golang}.
-You must come up with an idea for the web application and decide on its architecture, create a plan and develop it, write documentation explaining how it works and how to use it, and do a presentation of your project at the end of term.
-GitHub must be used to manage the development of the software, including the use of GitHub Issues.
-
-
-\subsection*{Group work}
+\section*{Teamwork}
 For this project, you will work as part of a team.
-Teamwork experience is frequently requested by employers during our consultations with them.
-This is often coupled with questions about the use of collaborative software such as GitHub.
-It is also essential if you plan to create your own startup, as evidenced by Y Combinator co-founder Paul Graham's essay on mistakes startups make~\cite{paulgrahammistakes}.
-
 Teams will be selected by the lecturer at the beginning of the module.
-Effort will be made to ensure a balance of skills on each team, and to facilitate easy collaboration.
+Students cannot request specific team members.
+Effort will be made to ensure a balance of skills on each team.
 
-\subsubsection*{Dealing with problems}
-There are a few common problems that arise in team work.
-The first one you may encounter is a difficulty in getting started.
-To counteract this, it is a good idea to make sure your team members have been fully introduced to each other and are aware of what they think are their strengths and weaknesses.
+Teamwork experience is frequently requested by employers.
+This is usually coupled with the ability the use of collaborative software such as GitHub.
+Furthermore, should you plan to create your own startup, working alone is not considered a great idea, as evidenced by Y Combinator co-founder Paul Graham's essay on mistakes startups make~\cite{paulgrahammistakes}.
 
-A second common problem is a member of the team not contributing.
-Before jumping to conclusions, members of the team should identify if the issue is related to ineffective communication.
-Some members of the team will naturally be less talkative than others, and this may not reflect their effort.
-Silent contributors can be a valuable asset.
+\subsection*{GitHub}
+GitHub must be used to manage the development of the software, including the use of GitHub Issues~\cite{githubissues}.
+GitHub issues allow collaborators to track project progress through bug reports, milestones and labels.
+
+Teams will have the opportunity during the weekly timetabled computer labs to work together on the project, and to ask the lecturer for advice.
+Your team's GitHub repository will be reviewed each week in these labs.
+The lecturer will add issues and comments to the team's repository to record these interactions.
+It is likely that these interactions will heavily affect the marking of the project.
+
+\subsection*{Dealing with problems}
+There are a few common problems that arise in teamwork~\cite{teamworkproblems}.
+One you may encounter is a difficulty in getting started.
+To counteract this, ensure your team members have been properly introduced to each other, and everyone has explained how they think that they can best contribute to the project.
+
+Another common problem is a member of the team not contributing.
+Before coming to this conclusion, members of the team should ensure that the issue is not just ineffective communication.
+Some members of the team will naturally be less talkative than others, and this may not reflect their work effort.
 Likewise, some members of the team will naturally be more forthright.
 It is important that all members of the team feel that they have opportunities to be heard.
 
-However, if some team members are consistently absent, non-responsive and are having a negative effect on the project, teams can, in consultation with the lecturer, decide to fork the project.
-This is fairly common in open-source projects and examples abound on GitHub.
+However, should some team members be consistently absent, non-responsive and are having a negative effect on the project, teams can, in consultation with the lecturer, decide to fork the project.
+This means that from that point forward, part of the team will separate into a separate project.
+GitHub facilitates this process, as it is fairly common in open-source projects and examples abound on GitHub~\cite{githubforking}.
 
-
-\subsection*{Technologies}
+\section*{Technology}
 You can use any combination of the following technologies in your project.
 Any other technologies, including libraries and frameworks, you wish to use must be agreed to by the lecturer.
 
@@ -49,28 +54,44 @@ Any other technologies, including libraries and frameworks, you wish to use must
 \item[Databases ---] Any SQL RDBMS, CouchDB, MongoDB, Neo4j, Redis.
 \end{description}
 
-\subsection*{Submissions}
+\section*{Submission}
 Your team's GitHub repository, along with the Issues tracker and all other GitHub facilities, will form the main submission of the project.
 
-\subsubsection*{On-going development}
-Your team's GitHub repository will be reviewed on a weekly basis in labs.
-Teams will have the opportunity in labs to work together on the project and to ask the lecturer for advice.
-The lecturer will add issues and comments to the team's repository to record these interactions.
-It is likely that these interactions will heavily affect the marking of the project.
-
-
-\subsubsection*{Presentation}
-You must present your project at the end of the semester.
+You must also present your project at the end of the semester.
 The exact dates of presentations will be determined at a later date, in consultation with the class.
 
 One team member can do the whole presentation, but everyone must be present to answer questions.
 Presentations will be limited to 10 minutes.
 
+\subsection*{Quality}
+A good project submission will demonstrate a team that worked well together to create a useful and easy-to-use web application.
+The code base will be well thought-out, and the issue tracker will show that the project was well managed.
+Programming is only part of the task.
 
+\subsection*{Student Conduct}
+You should familiarise yourself with GMIT's code of student conduct~\cite{gmitconduct} and also the policy on plagiarism~\cite{gmitplagiarism}.
+In particular, note two things.
+First, students are expected to treat other students and staff politely and with courtesy.
+Second, it is assumed that all work you submit is being presented as your own work, unless referenced otherwise.
 
-\subsection*{The standard}
-In order to set a context for the project, students consider the following.
+\subsection*{Marking scheme}
+The following marking scheme will be used to mark the project.
+Student should note, however, that in certain circumstances the examiners overall impression of the project may influence marks in each individual component.
 
+\begin{center}
+\begin{tabular}{x{1cm}p{2.5cm}p{9cm}}
+\toprule
+40\% & Programming & Well-written code; logical directory structure; extensive commenting; extensive git commits.\\
+\midrule
+40\% & Architecture & Good separation of concerns; clear APPI, use of new technologies. \\
+\midrule
+20\% & Presentation & Well-prepared; interesting parts of project highlighted; confident. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{Expected standard}
+Please note that this is a level 8 module.
 You should be aware that the standard required for submissions at level 8 (fourth year) is higher than at level 7 (third year), which in turn is higher than at level 6 (first and second year).
 Significant effort is made to ensure that the standard is fair and consistent across third level institutes, both nationally and internationally.
 The standard we set for modules in computing is informed by Quality and Qualifications Ireland's Award Standard for Computing~\cite{qqicomputing}.
@@ -113,11 +134,3 @@ The learner will be able to:
 \item implement computer based systems solutions to well-defined problems.
 \end{itemize}
 }
-
-
-
-
-\section*{Summary}
-Best of luck.
-
-
